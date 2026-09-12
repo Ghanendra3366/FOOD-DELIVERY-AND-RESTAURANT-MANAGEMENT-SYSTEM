@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="THE MARKETS customer experience" name="description" />
+    <title>Checkout | THE MARKETS</title>
+    <link href="../../css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="dashboard-layout">
+      <aside class="dashboard-sidebar">
+        <a class="brand" href="../../index.html"
+          ><span class="brand-mark">TM</span><span>THE MARKETS</span></a
+        >
+        <nav aria-label="Customer navigation" class="dashboard-sidebar__nav">
+          <a href="dashboard.html">Dashboard</a
+          ><a href="restaurants.html">Restaurants</a
+          ><a href="search.html">Search Food</a
+          ><a href="categories.html">Categories</a
+          ><a aria-current="page" href="cart.html">Cart · 2</a
+          ><a href="orders.html">Orders</a
+          ><a href="track-order.html">Track Order</a
+          ><a href="wishlist.html">Wishlist</a><a href="reviews.html">Reviews</a
+          ><a href="offers.html">Offers</a><a href="addresses.html">Addresses</a
+          ><a href="profile.html">Profile</a
+          ><a href="notifications.html">Notifications</a
+          ><a href="support.html">Support</a
+          ><a class="js-logout" href="../public/login.html">Logout</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <div>
+            <p class="eyebrow">Customer area</p>
+            <h1>Checkout</h1>
+          </div>
+          <div class="cluster">
+            <span class="badge badge--info">📍 Demo City</span
+            ><a
+              aria-label="Notifications"
+              class="icon-button"
+              href="notifications.html"
+              >🔔</a
+            ><a class="btn btn--outline btn--sm" href="profile.html">Aarav</a>
+          </div>
+        </header>
+        <div class="dashboard-content">
+          <section class="two-column">
+            <div class="stack">
+              <section class="surface stack">
+                <div class="split">
+                  <h2>Delivery address</h2>
+                  <a class="btn btn--outline btn--sm" href="addresses.html"
+                    >Change address</a
+                  >
+                </div>
+                <label class="form-check"
+                  ><input checked="" name="address" type="radio" />
+                  <strong>Home</strong> · 12 Market Road, Demo City · +91 90000
+                  00000</label
+                ><a class="btn btn--ghost btn--sm" href="addresses.html"
+                  >Add new address</a
+                >
+              </section>
+              <section class="surface stack">
+                <h2>Order items</h2>
+                <div class="split">
+                  <span>Butter Chicken × 1</span><strong>₹349</strong>
+                </div>
+                <div class="split">
+                  <span>Veg Biryani × 1</span><strong>₹279</strong>
+                </div>
+              </section>
+              <form action="order-details.html" class="surface form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="instructions"
+                    >Delivery instructions</label
+                  ><textarea
+                    class="form-control"
+                    id="instructions"
+                    placeholder="Building, gate, or landmark"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="checkout-coupon"
+                    >Coupon code</label
+                  ><input
+                    class="form-control"
+                    id="checkout-coupon"
+                    value="SPICE20"
+                  />
+                </div>
+                <fieldset class="form-grid">
+                  <legend class="form-label">Payment method</legend>
+                  <label class="form-check"
+                    ><input checked="" name="payment" type="radio" /> Cash on
+                    delivery</label
+                  ><label class="form-check"
+                    ><input name="payment" type="radio" /> UPI</label
+                  ><label class="form-check"
+                    ><input name="payment" type="radio" /> Credit / Debit
+                    card</label
+                  ><label class="form-check"
+                    ><input name="payment" type="radio" /> Net banking</label
+                  >
+                </fieldset>
+                <button class="btn btn--primary" type="submit">
+                  Place demo order
+                </button>
+              </form>
+            </div>
+            <aside class="price-summary">
+              <h2>Final summary</h2>
+              <div class="split"><span>Subtotal</span><span>₹628</span></div>
+              <div class="split">
+                <span>Discount</span><span class="text-success">−₹50</span>
+              </div>
+              <div class="split"><span>Delivery</span><span>₹29</span></div>
+              <div class="split"><span>Tax</span><span>₹32</span></div>
+              <div class="price-summary__total">
+                <span>Total</span><span>₹639</span>
+              </div>
+              <p class="caption">
+                No payment is processed in this static demo.
+              </p>
+            </aside>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script defer="True" src="../../js/app.js"></script>
+  </body>
+</html>

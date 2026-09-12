@@ -1,0 +1,231 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="THE MARKETS customer experience" name="description" />
+    <title>Restaurants | THE MARKETS</title>
+    <link href="../../css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="dashboard-layout">
+      <aside class="dashboard-sidebar">
+        <a class="brand" href="../../index.html"
+          ><span class="brand-mark">TM</span><span>THE MARKETS</span></a
+        >
+        <nav aria-label="Customer navigation" class="dashboard-sidebar__nav">
+          <a href="dashboard.html">Dashboard</a
+          ><a aria-current="page" href="restaurants.html">Restaurants</a
+          ><a href="search.html">Search Food</a
+          ><a href="categories.html">Categories</a
+          ><a href="cart.html">Cart · 2</a><a href="orders.html">Orders</a
+          ><a href="track-order.html">Track Order</a
+          ><a href="wishlist.html">Wishlist</a><a href="reviews.html">Reviews</a
+          ><a href="offers.html">Offers</a><a href="addresses.html">Addresses</a
+          ><a href="profile.html">Profile</a
+          ><a href="notifications.html">Notifications</a
+          ><a href="support.html">Support</a
+          ><a class="js-logout" href="../public/login.html">Logout</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <div>
+            <p class="eyebrow">Customer area</p>
+            <h1>Restaurants</h1>
+          </div>
+          <div class="cluster">
+            <span class="badge badge--info">📍 Demo City</span
+            ><a
+              aria-label="Notifications"
+              class="icon-button"
+              href="notifications.html"
+              >🔔</a
+            ><a class="btn btn--outline btn--sm" href="profile.html">Aarav</a>
+          </div>
+        </header>
+        <div class="dashboard-content">
+          <section class="stack">
+            <p class="lead">
+              Find a local kitchen by cuisine, budget, rating, or delivery
+              speed.
+            </p>
+            <form action="restaurants.html" class="filter-bar">
+              <label class="sr-only" for="customer-restaurant-search"
+                >Search restaurants</label
+              ><input
+                class="form-control"
+                id="customer-restaurant-search"
+                placeholder="Search restaurants"
+                type="search"
+              /><select aria-label="Cuisine" class="form-control">
+                <option>All cuisines</option>
+                <option>Indian</option>
+                <option>Italian</option></select
+              ><select aria-label="Rating" class="form-control">
+                <option>Rating 4.0+</option>
+                <option>Rating 4.5+</option></select
+              ><select aria-label="Delivery time" class="form-control">
+                <option>Any delivery time</option>
+                <option>Under 30 min</option></select
+              ><button class="btn btn--primary" type="submit">Filter</button>
+            </form>
+            <div class="grid grid--3">
+              <article class="card restaurant-card">
+                <img
+                  alt="The Spice Route restaurant"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <div class="split">
+                    <h2 class="card-title">The Spice Route</h2>
+                    <span class="rating">★ 4.8</span>
+                  </div>
+                  <p class="card-meta">
+                    <span>North Indian</span><span>25–35 min</span
+                    ><span>₹₹</span>
+                  </p>
+                  <span class="badge badge--success">● Open now</span>
+                </div>
+                <div class="card__footer">
+                  <span class="caption">FREEDEL available</span
+                  ><a class="btn btn--outline btn--sm" href="food-details.html"
+                    >View restaurant</a
+                  >
+                </div>
+              </article>
+              <article class="card restaurant-card">
+                <img
+                  alt="Pizza Corner restaurant"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <div class="split">
+                    <h2 class="card-title">Pizza Corner</h2>
+                    <span class="rating">★ 4.6</span>
+                  </div>
+                  <p class="card-meta">
+                    <span>Pizza, Italian</span><span>30–40 min</span
+                    ><span>₹₹</span>
+                  </p>
+                  <span class="badge badge--success">● Open now</span>
+                </div>
+                <div class="card__footer">
+                  <span class="caption">FREEDEL available</span
+                  ><a class="btn btn--outline btn--sm" href="food-details.html"
+                    >View restaurant</a
+                  >
+                </div>
+              </article>
+              <article class="card restaurant-card">
+                <img
+                  alt="Green Bowl restaurant"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <div class="split">
+                    <h2 class="card-title">Green Bowl</h2>
+                    <span class="rating">★ 4.9</span>
+                  </div>
+                  <p class="card-meta">
+                    <span>Healthy, Bowls</span><span>20–30 min</span
+                    ><span>₹₹</span>
+                  </p>
+                  <span class="badge badge--success">● Open now</span>
+                </div>
+                <div class="card__footer">
+                  <span class="caption">FREEDEL available</span
+                  ><a class="btn btn--outline btn--sm" href="food-details.html"
+                    >View restaurant</a
+                  >
+                </div>
+              </article>
+              <article class="card restaurant-card">
+                <img
+                  alt="Urban Bites restaurant"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <div class="split">
+                    <h2 class="card-title">Urban Bites</h2>
+                    <span class="rating">★ 4.5</span>
+                  </div>
+                  <p class="card-meta">
+                    <span>Café, Continental</span><span>25–40 min</span
+                    ><span>₹₹</span>
+                  </p>
+                  <span class="badge badge--success">● Open now</span>
+                </div>
+                <div class="card__footer">
+                  <span class="caption">FREEDEL available</span
+                  ><a class="btn btn--outline btn--sm" href="food-details.html"
+                    >View restaurant</a
+                  >
+                </div>
+              </article>
+              <article class="card restaurant-card">
+                <img
+                  alt="Royal Tandoor restaurant"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <div class="split">
+                    <h2 class="card-title">Royal Tandoor</h2>
+                    <span class="rating">★ 4.7</span>
+                  </div>
+                  <p class="card-meta">
+                    <span>Mughlai</span><span>30–45 min</span><span>₹₹</span>
+                  </p>
+                  <span class="badge badge--success">● Open now</span>
+                </div>
+                <div class="card__footer">
+                  <span class="caption">FREEDEL available</span
+                  ><a class="btn btn--outline btn--sm" href="food-details.html"
+                    >View restaurant</a
+                  >
+                </div>
+              </article>
+              <article class="card restaurant-card">
+                <img
+                  alt="Burger Junction restaurant"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <div class="split">
+                    <h2 class="card-title">Burger Junction</h2>
+                    <span class="rating">★ 4.4</span>
+                  </div>
+                  <p class="card-meta">
+                    <span>Burgers</span><span>20–30 min</span><span>₹₹</span>
+                  </p>
+                  <span class="badge badge--success">● Open now</span>
+                </div>
+                <div class="card__footer">
+                  <span class="caption">FREEDEL available</span
+                  ><a class="btn btn--outline btn--sm" href="food-details.html"
+                    >View restaurant</a
+                  >
+                </div>
+              </article>
+            </div>
+            <nav aria-label="Restaurant pagination" class="cluster">
+              <a class="btn btn--outline btn--sm" href="restaurants.html">1</a
+              ><a class="btn btn--ghost btn--sm" href="restaurants.html">2</a
+              ><a class="btn btn--ghost btn--sm" href="restaurants.html"
+                >Load more</a
+              >
+            </nav>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script defer="True" src="../../js/app.js"></script>
+  </body>
+</html>

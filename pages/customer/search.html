@@ -1,0 +1,221 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="THE MARKETS customer experience" name="description" />
+    <title>Search food | THE MARKETS</title>
+    <link href="../../css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="dashboard-layout">
+      <aside class="dashboard-sidebar">
+        <a class="brand" href="../../index.html"
+          ><span class="brand-mark">TM</span><span>THE MARKETS</span></a
+        >
+        <nav aria-label="Customer navigation" class="dashboard-sidebar__nav">
+          <a href="dashboard.html">Dashboard</a
+          ><a href="restaurants.html">Restaurants</a
+          ><a aria-current="page" href="search.html">Search Food</a
+          ><a href="categories.html">Categories</a
+          ><a href="cart.html">Cart · 2</a><a href="orders.html">Orders</a
+          ><a href="track-order.html">Track Order</a
+          ><a href="wishlist.html">Wishlist</a><a href="reviews.html">Reviews</a
+          ><a href="offers.html">Offers</a><a href="addresses.html">Addresses</a
+          ><a href="profile.html">Profile</a
+          ><a href="notifications.html">Notifications</a
+          ><a href="support.html">Support</a
+          ><a class="js-logout" href="../public/login.html">Logout</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <div>
+            <p class="eyebrow">Customer area</p>
+            <h1>Search food</h1>
+          </div>
+          <div class="cluster">
+            <span class="badge badge--info">📍 Demo City</span
+            ><a
+              aria-label="Notifications"
+              class="icon-button"
+              href="notifications.html"
+              >🔔</a
+            ><a class="btn btn--outline btn--sm" href="profile.html">Aarav</a>
+          </div>
+        </header>
+        <div class="dashboard-content">
+          <section class="stack">
+            <form action="search.html" class="search-form">
+              <label class="sr-only" for="food-search">Search food</label
+              ><input
+                class="form-control"
+                id="food-search"
+                name="query"
+                type="search"
+                value="Pizza"
+              /><button class="btn btn--primary" type="submit">Search</button>
+            </form>
+            <div class="cluster">
+              <span class="badge">Recent: Biryani</span
+              ><span class="badge">Recent: Pizza</span
+              ><span class="badge">Popular: Butter Chicken</span>
+            </div>
+            <form class="filter-bar">
+              <select aria-label="Result type" class="form-control">
+                <option>All results</option>
+                <option>Food</option>
+                <option>Restaurants</option></select
+              ><select aria-label="Price" class="form-control">
+                <option>Any price</option>
+                <option>Under ₹300</option></select
+              ><button class="btn btn--outline" type="submit">Refine</button>
+            </form>
+          </section>
+          <section class="stack">
+            <p class="eyebrow">Search results</p>
+            <h2>Results for “Pizza”</h2>
+            <h3>Restaurants</h3>
+            <div class="grid grid--2">
+              <article class="card restaurant-card">
+                <img
+                  alt="Pizza Corner restaurant"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <div class="split">
+                    <h2 class="card-title">Pizza Corner</h2>
+                    <span class="rating">★ 4.6</span>
+                  </div>
+                  <p class="card-meta">
+                    <span>Pizza, Italian</span><span>30–40 min</span
+                    ><span>₹₹</span>
+                  </p>
+                  <span class="badge badge--success">● Open now</span>
+                </div>
+                <div class="card__footer">
+                  <span class="caption">FREEDEL available</span
+                  ><a class="btn btn--outline btn--sm" href="food-details.html"
+                    >View restaurant</a
+                  >
+                </div>
+              </article>
+              <article class="card restaurant-card">
+                <img
+                  alt="Urban Bites restaurant"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <div class="split">
+                    <h2 class="card-title">Urban Bites</h2>
+                    <span class="rating">★ 4.5</span>
+                  </div>
+                  <p class="card-meta">
+                    <span>Café, Pizza</span><span>25–40 min</span
+                    ><span>₹₹</span>
+                  </p>
+                  <span class="badge badge--success">● Open now</span>
+                </div>
+                <div class="card__footer">
+                  <span class="caption">FREEDEL available</span
+                  ><a class="btn btn--outline btn--sm" href="food-details.html"
+                    >View restaurant</a
+                  >
+                </div>
+              </article>
+            </div>
+            <h3>Food</h3>
+            <div class="grid grid--3">
+              <article class="card food-card">
+                <img
+                  alt="Margherita Pizza"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <h2 class="card-title">Margherita Pizza</h2>
+                  <p class="muted">Pizza Corner · ★ 4.7</p>
+                  <strong>₹299</strong>
+                </div>
+                <div class="card__footer">
+                  <span class="badge badge--success">● Available</span
+                  ><a
+                    class="btn btn--primary btn--sm js-add-to-cart"
+                    data-food-name="Margherita Pizza"
+                    data-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                    data-price="299"
+                    data-product-id="margherita-pizza"
+                    data-restaurant="Pizza Corner"
+                    href="cart.html"
+                    >Add to cart</a
+                  >
+                </div>
+              </article>
+              <article class="card food-card">
+                <img
+                  alt="Farmhouse Pizza"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <h2 class="card-title">Farmhouse Pizza</h2>
+                  <p class="muted">Pizza Corner · ★ 4.7</p>
+                  <strong>₹379</strong>
+                </div>
+                <div class="card__footer">
+                  <span class="badge badge--success">● Available</span
+                  ><a
+                    class="btn btn--primary btn--sm js-add-to-cart"
+                    data-food-name="Farmhouse Pizza"
+                    data-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                    data-price="379"
+                    data-product-id="farmhouse-pizza"
+                    data-restaurant="Pizza Corner"
+                    href="cart.html"
+                    >Add to cart</a
+                  >
+                </div>
+              </article>
+              <article class="card food-card">
+                <img
+                  alt="Pesto Veg Pizza"
+                  class="card__image"
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                />
+                <div class="card__body stack">
+                  <h2 class="card-title">Pesto Veg Pizza</h2>
+                  <p class="muted">Urban Bites · ★ 4.7</p>
+                  <strong>₹349</strong>
+                </div>
+                <div class="card__footer">
+                  <span class="badge badge--success">● Available</span
+                  ><a
+                    class="btn btn--primary btn--sm js-add-to-cart"
+                    data-food-name="Pesto Veg Pizza"
+                    data-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                    data-price="349"
+                    data-product-id="pesto-veg-pizza"
+                    data-restaurant="Pizza Corner"
+                    href="cart.html"
+                    >Add to cart</a
+                  >
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="empty-state">
+            <span class="empty-state__icon">⌕</span>
+            <h2>Looking for something else?</h2>
+            <p class="muted">
+              Try “Biryani”, “South Indian”, or a restaurant name.
+            </p>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script defer="True" src="../../js/app.js"></script>
+  </body>
+</html>

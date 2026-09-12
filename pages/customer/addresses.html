@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="THE MARKETS customer experience" name="description" />
+    <title>Saved addresses | THE MARKETS</title>
+    <link href="../../css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="dashboard-layout">
+      <aside class="dashboard-sidebar">
+        <a class="brand" href="../../index.html"
+          ><span class="brand-mark">TM</span><span>THE MARKETS</span></a
+        >
+        <nav aria-label="Customer navigation" class="dashboard-sidebar__nav">
+          <a href="dashboard.html">Dashboard</a
+          ><a href="restaurants.html">Restaurants</a
+          ><a href="search.html">Search Food</a
+          ><a href="categories.html">Categories</a
+          ><a href="cart.html">Cart · 2</a><a href="orders.html">Orders</a
+          ><a href="track-order.html">Track Order</a
+          ><a href="wishlist.html">Wishlist</a><a href="reviews.html">Reviews</a
+          ><a href="offers.html">Offers</a
+          ><a aria-current="page" href="addresses.html">Addresses</a
+          ><a href="profile.html">Profile</a
+          ><a href="notifications.html">Notifications</a
+          ><a href="support.html">Support</a
+          ><a class="js-logout" href="../public/login.html">Logout</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <div>
+            <p class="eyebrow">Customer area</p>
+            <h1>Saved addresses</h1>
+          </div>
+          <div class="cluster">
+            <span class="badge badge--info">📍 Demo City</span
+            ><a
+              aria-label="Notifications"
+              class="icon-button"
+              href="notifications.html"
+              >🔔</a
+            ><a class="btn btn--outline btn--sm" href="profile.html">Aarav</a>
+          </div>
+        </header>
+        <div class="dashboard-content">
+          <section class="grid grid--2">
+            <div class="stack">
+              <article class="surface stack">
+                <div class="split">
+                  <h2>Home</h2>
+                  <span class="badge badge--success">Default</span>
+                </div>
+                <p>
+                  12 Market Road, Near City Park, Demo City<br />+91 90000 00000
+                </p>
+                <div class="cluster">
+                  <a class="btn btn--outline btn--sm" href="addresses.html"
+                    >Edit</a
+                  ><a class="btn btn--danger btn--sm" href="addresses.html"
+                    >Delete</a
+                  ><a class="btn btn--ghost btn--sm" href="addresses.html"
+                    >Set as default</a
+                  >
+                </div>
+              </article>
+              <article class="surface stack">
+                <div class="split"><h2>Work</h2></div>
+                <p>8 Technology Avenue, Demo City<br />+91 90000 00000</p>
+                <div class="cluster">
+                  <a class="btn btn--outline btn--sm" href="addresses.html"
+                    >Edit</a
+                  ><a class="btn btn--danger btn--sm" href="addresses.html"
+                    >Delete</a
+                  ><a class="btn btn--ghost btn--sm" href="addresses.html"
+                    >Set as default</a
+                  >
+                </div>
+              </article>
+            </div>
+            <form action="addresses.html" class="surface form-grid">
+              <h2>Add new address</h2>
+              <div class="form-group">
+                <label class="form-label" for="address-name">Name</label
+                ><input class="form-control" id="address-name" required="" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="address-phone">Phone</label
+                ><input
+                  class="form-control"
+                  id="address-phone"
+                  required=""
+                  type="tel"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="line">Address line</label
+                ><textarea
+                  class="form-control"
+                  id="line"
+                  required=""
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="city">City</label
+                  ><input class="form-control" id="city" required="" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="postal">Postal code</label
+                  ><input class="form-control" id="postal" required="" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="type">Address type</label
+                ><select class="form-control" id="type">
+                  <option>Home</option>
+                  <option>Work</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <button class="btn btn--primary" type="submit">
+                Save address
+              </button>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script defer="True" src="../../js/app.js"></script>
+  </body>
+</html>
