@@ -1,0 +1,7 @@
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+.visually-hidden { display: none; }
+.w-full { width: 100%; }
+.text-right { text-align: right; }
+.surface { padding: var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
+.divider { height: 1px; background: var(--color-border); }
+

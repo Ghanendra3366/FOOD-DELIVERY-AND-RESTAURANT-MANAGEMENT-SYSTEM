@@ -1,0 +1,11 @@
+h1, h2, h3, h4 { color: var(--color-text); font-weight: var(--font-weight-bold); line-height: var(--line-height-tight); }
+h1 { font-size: var(--font-size-4xl); letter-spacing: -.045em; }
+h2 { font-size: var(--font-size-3xl); letter-spacing: -.03em; }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: var(--font-size-lg); }
+.lead { color: var(--color-text-secondary); font-size: var(--font-size-lg); }
+.eyebrow { color: var(--color-primary); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); letter-spacing: .1em; text-transform: uppercase; }
+.muted, .caption, .helper-text { color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.text-success { color: var(--color-success); }
+.text-error { color: var(--color-error); }
+

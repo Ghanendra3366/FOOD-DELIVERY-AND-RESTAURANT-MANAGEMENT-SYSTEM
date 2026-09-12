@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="THE MARKETS food delivery and restaurant management system" name="description"/>
+<title>THE MARKETS | Food delivery, made clear</title>
+<link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<div class="container site-header__inner">
+<a aria-label="THE MARKETS home" class="brand" href="index.html"><span class="brand-mark">TM</span><span>THE MARKETS</span></a>
+<nav aria-label="Primary navigation" class="site-nav">
+<a aria-current="page" href="index.html">Home</a><a href="pages/public/restaurants.html">Restaurants</a><a href="pages/public/offers.html">Offers</a><a href="pages/public/about.html">About</a><a href="pages/public/help.html">Help</a>
+</nav>
+<div class="header-actions"><a class="btn btn--ghost btn--sm" href="pages/customer/cart.html">Cart (2)</a><a class="btn btn--outline btn--sm" href="pages/public/login.html">Login</a><a class="btn btn--primary btn--sm" href="pages/public/register.html">Register</a></div>
+</div>
+</header>
+<main>
+<section class="page-hero">
+<div class="container grid grid--2">
+<div class="stack">
+<p class="eyebrow">Food that fits your day</p>
+<h1>Good food, from great local kitchens.</h1>
+<p class="lead">Explore handpicked restaurants, discover your next favourite dish, and order with clarity from menu to doorstep.</p>
+<form action="pages/public/restaurants.html" class="search-form" method="get">
+<label class="sr-only" for="home-search">Search food or restaurants</label>
+<input class="form-control" id="home-search" name="query" placeholder="Search biryani, pizza, cafés…" type="search"/>
+<button class="btn btn--primary" type="submit">Search food</button>
+</form>
+<div class="cluster"><a class="btn btn--secondary" href="pages/public/restaurants.html">Explore restaurants</a><a class="btn btn--ghost" href="pages/public/offers.html">View today’s offers</a></div>
+</div>
+<article class="card"><img alt="A richly plated Indian meal" class="card__image" src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="card__body stack"><span class="badge badge--warning">Popular today</span><h2>Comfort food, delivered responsibly.</h2></div></article>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-heading"><div class="section-heading__copy"><p class="eyebrow">Browse by mood</p><h2>Find exactly what you are craving.</h2></div><a class="btn btn--outline" href="pages/public/categories.html">All categories</a></div>
+<div class="grid grid--4">
+<a class="category-card" href="pages/public/categories.html"><span class="category-card__icon">🍕</span><div><h3>Pizza</h3><p class="muted">46 places nearby</p></div></a>
+<a class="category-card" href="pages/public/categories.html"><span class="category-card__icon">🍛</span><div><h3>Indian</h3><p class="muted">68 places nearby</p></div></a>
+<a class="category-card" href="pages/public/categories.html"><span class="category-card__icon">🥘</span><div><h3>Biryani</h3><p class="muted">32 places nearby</p></div></a>
+<a class="category-card" href="pages/public/categories.html"><span class="category-card__icon">🍔</span><div><h3>Burgers</h3><p class="muted">27 places nearby</p></div></a>
+</div>
+</div>
+</section>
+<section class="section section--muted">
+<div class="container">
+<div class="section-heading"><div class="section-heading__copy"><p class="eyebrow">Featured partners</p><h2>Restaurants people return to.</h2></div><a class="btn btn--outline" href="pages/public/restaurants.html">See all</a></div>
+<div class="grid grid--3">
+<article class="card restaurant-card"><img alt="The Spice Route restaurant" class="card__image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="card__body stack"><div class="split"><h3 class="card-title">The Spice Route</h3><span class="rating">★ 4.8</span></div><p class="card-meta"><span>North Indian</span><span>25–35 min</span><span>₹₹</span></p><span class="badge badge--success">● Open now</span></div><div class="card__footer"><span class="caption">Free delivery over ₹399</span><a class="btn btn--outline btn--sm" href="pages/public/restaurant-details.html">View menu</a></div></article>
+<article class="card restaurant-card"><img alt="Pizza Corner restaurant" class="card__image" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="card__body stack"><div class="split"><h3 class="card-title">Pizza Corner</h3><span class="rating">★ 4.6</span></div><p class="card-meta"><span>Pizza, Italian</span><span>30–40 min</span><span>₹₹</span></p><span class="badge badge--success">● Open now</span></div><div class="card__footer"><span class="caption">Free delivery over ₹399</span><a class="btn btn--outline btn--sm" href="pages/public/restaurant-details.html">View menu</a></div></article>
+<article class="card restaurant-card"><img alt="Green Bowl restaurant" class="card__image" src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="card__body stack"><div class="split"><h3 class="card-title">Green Bowl</h3><span class="rating">★ 4.9</span></div><p class="card-meta"><span>Healthy, Bowls</span><span>20–30 min</span><span>₹₹</span></p><span class="badge badge--success">● Open now</span></div><div class="card__footer"><span class="caption">Free delivery over ₹399</span><a class="btn btn--outline btn--sm" href="pages/public/restaurant-details.html">View menu</a></div></article>
+</div>
+</div>
+</section>
+<section class="section"><div class="container grid grid--2"><article class="offer-card"><p class="eyebrow">New customer offer</p><h3>Save ₹125 on your first order</h3><p>On a minimum order of ₹499. Valid for demo orders through this week.</p><span class="offer-card__code">WELCOME125</span><a class="btn btn--outline btn--sm" href="pages/public/offers.html">See terms</a></article><div class="stack"><p class="eyebrow">How it works</p><h2>From search to doorstep in three steps.</h2><ol class="stack"><li><strong>01 · Discover</strong><p class="muted">Compare menus, ratings and delivery information.</p></li><li><strong>02 · Choose</strong><p class="muted">Review your cart and select an address.</p></li><li><strong>03 · Track</strong><p class="muted">Follow each order status from kitchen to delivery.</p></li></ol></div></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div class="stack"><a class="brand" href="index.html"><span class="brand-mark">TM</span><span>THE MARKETS</span></a><p class="caption">Discover local kitchens and manage every meal with clarity.</p></div><div><h3>Explore</h3><ul class="footer-links"><li><a href="pages/public/restaurants.html">Restaurants</a></li><li><a href="pages/public/categories.html">Categories</a></li><li><a href="pages/public/offers.html">Offers</a></li></ul></div><div><h3>Support</h3><ul class="footer-links"><li><a href="pages/public/help.html">Help centre</a></li><li><a href="pages/public/contact.html">Contact</a></li><li><a href="pages/customer/track-order.html">Track order</a></li></ul></div><div><h3>Company</h3><ul class="footer-links"><li><a href="pages/public/about.html">About</a></li><li><a href="pages/public/login.html">Login</a></li><li><a href="pages/public/register.html">Register</a></li></ul></div></div><div class="container footer-bottom">© 2026 THE MARKETS · Static university-project prototype.</div></footer>
+<script defer="True" src="js/app.js"></script></body>
+</html>

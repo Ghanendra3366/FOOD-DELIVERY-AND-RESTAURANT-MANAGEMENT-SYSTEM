@@ -1,0 +1,9 @@
+html { scroll-behavior: smooth; }
+body { min-width: 320px; background: var(--color-background); color: var(--color-text); font-family: var(--font-sans); font-size: var(--font-size-base); line-height: var(--line-height-body); }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--color-primary); }
+button, input, select, textarea { border-radius: var(--radius-sm); }
+button:disabled, .is-disabled { cursor: not-allowed; opacity: .55; }
+::selection { background: #ffd7c9; color: var(--color-text); }
+:focus-visible { outline: 3px solid #f5a469; outline-offset: 3px; }
+
