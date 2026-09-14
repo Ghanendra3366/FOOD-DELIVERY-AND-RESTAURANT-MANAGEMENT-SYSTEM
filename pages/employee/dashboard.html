@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="THE MARKETS restaurant staff dashboard" name="description" />
+    <title>Good morning, Restaurant Manager | THE MARKETS</title>
+    <link href="../../css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="dashboard-sidebar">
+            <a class="brand" href="../../index.html">
+                <span class="brand-mark">TM</span>
+                <span>THE MARKETS</span>
+            </a>
+        <nav aria-label="Restaurant staff navigation" class="dashboard-sidebar__nav">
+            <a aria-current="page" href="dashboard.html">Dashboard</a>
+            <a href="restaurant.html">Restaurant</a>
+            <a href="menu.html">Menu</a>
+            <a href="categories.html">Categories</a>
+            <a href="food-items.html">Food Items</a>
+            <a href="availability.html">Availability</a>
+            <a href="orders.html">Orders</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="offers.html">Offers</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="customers.html">Customers</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="settings.html">Settings</a>
+            <a href="profile.html">Profile</a>
+            <a class="js-logout" href="../public/login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <main class="dashboard-main">
+        <header class="dashboard-topbar">
+            <div>
+                <p class="eyebrow">Restaurant workspace</p>
+                <h1>Good morning, Restaurant Manager</h1>
+            </div>
+
+            <div class="cluster">
+                <span class="badge badge--success">● The Spice Route · Open</span>
+                <a aria-label="Notifications" class="icon-button" href="notifications.html">🔔</a>
+                <a class="btn btn--outline btn--sm" href="profile.html">Manager</a>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <section class="surface split">
+                <div>
+                    <p class="eyebrow">The Spice Route</p>
+                    <h2>Manage your restaurant and orders.</h2>
+                    <p class="muted">Restaurant is accepting orders today.</p>
+                </div>
+
+                <a class="btn btn--danger" href="restaurant.html">
+                    Close restaurant
+                </a>
+            </section>
+
+            <section class="grid grid--4">
+                <article class="stat-card">
+                    <strong>24</strong>
+                    <span class="muted">Today's orders</span>
+                </article>
+
+                <article class="stat-card">
+                    <strong>₹12,840</strong>
+                    <span class="muted">Today's revenue</span>
+                </article>
+
+                <article class="stat-card">
+                    <strong>5</strong>
+                    <span class="muted">Pending orders</span>
+                </article>
+
+                <article class="stat-card">
+                    <strong>19</strong>
+                    <span class="muted">Completed orders</span>
+                </article>
+
+                <article class="stat-card">
+                    <strong>46</strong>
+                    <span class="muted">Food items</span>
+                </article>
+
+                <article class="stat-card">
+                    <strong>3</strong>
+                    <span class="muted">Low stock items</span>
+                </article>
+
+                <article class="stat-card">
+                    <strong>18</strong>
+                    <span class="muted">Customer reviews</span>
+                </article>
+
+                <article class="stat-card">
+                    <strong>4.7</strong>
+                    <span class="muted">Average rating</span>
+                </article>
+            </section>
+
+            <section class="grid grid--2">
+                <article class="surface stack">
+                    <h2>Order overview</h2>
+
+                    <div class="grid grid--3">
+                        <div class="stat-card">
+                            <strong>2</strong>
+                            <span class="muted">New</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>3</strong>
+                            <span class="muted">Preparing</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>2</strong>
+                            <span class="muted">Ready</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>19</strong>
+                            <span class="muted">Completed</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>1</strong>
+                            <span class="muted">Cancelled</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="surface stack">
+                    <h2>Sales summary</h2>
+
+                    <div class="chart-list">
+                        <div class="chart-row">
+                            <span>Mon</span>
+                            <span class="chart-bar"></span>
+                            <span>₹9.2k</span>
+                        </div>
+
+                        <div class="chart-row">
+                            <span>Tue</span>
+                            <span class="chart-bar"></span>
+                            <span>₹11.1k</span>
+                        </div>
+
+                        <div class="chart-row">
+                            <span>Wed</span>
+                            <span class="chart-bar"></span>
+                            <span>₹7.4k</span>
+                        </div>
+
+                        <div class="chart-row">
+                            <span>Thu</span>
+                            <span class="chart-bar"></span>
+                            <span>₹13.5k</span>
+                        </div>
+
+                        <div class="chart-row">
+                            <span>Fri</span>
+                            <span class="chart-bar"></span>
+                            <span>₹12.8k</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="surface stack">
+                <h2>Recent orders</h2>
+                <a class="btn btn--outline" href="orders.html">
+                    Manage orders
+                </a>
+            </section>
+        </div>
+    </main>
+</div>
+
+<script defer="True" src="../../js/app.js"></script>
+</body>
+</html>

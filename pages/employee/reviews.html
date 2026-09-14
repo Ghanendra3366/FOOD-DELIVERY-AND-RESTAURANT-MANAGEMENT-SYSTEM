@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="THE MARKETS restaurant staff dashboard" name="description"/>
+    <title>Reviews | THE MARKETS</title>
+    <link href="../../css/main.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="dashboard-sidebar">
+            <a class="brand" href="../../index.html">
+                <span class="brand-mark">TM</span>
+                <span>THE MARKETS</span>
+            </a>
+        <nav aria-label="Restaurant staff navigation" class="dashboard-sidebar__nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="restaurant.html">Restaurant</a>
+            <a href="menu.html">Menu</a>
+            <a href="categories.html">Categories</a>
+            <a href="food-items.html">Food Items</a>
+            <a href="availability.html">Availability</a>
+            <a href="orders.html">Orders</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="offers.html">Offers</a>
+            <a aria-current="page" href="reviews.html">Reviews</a>
+            <a href="customers.html">Customers</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="settings.html">Settings</a>
+            <a href="profile.html">Profile</a>
+            <a class="js-logout" href="../public/login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <main class="dashboard-main">
+        <header class="dashboard-topbar">
+            <div>
+                <p class="eyebrow">Restaurant workspace</p>
+                <h1>Reviews</h1>
+            </div>
+
+            <div class="cluster">
+                <span class="badge badge--success">● The Spice Route · Open</span>
+                <a aria-label="Notifications" class="icon-button" href="notifications.html">🔔</a>
+                <a class="btn btn--outline btn--sm" href="profile.html">Manager</a>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <section class="grid grid--2">
+                <article class="surface stack">
+                    <h2>Rating summary</h2>
+                    <strong class="card-title">4.7 / 5</strong>
+
+                    <div class="chart-list">
+                        <div class="chart-row">
+                            <span>5 star</span>
+                            <span class="chart-bar"></span>
+                            <span>82%</span>
+                        </div>
+
+                        <div class="chart-row">
+                            <span>4 star</span>
+                            <span class="chart-bar"></span>
+                            <span>13%</span>
+                        </div>
+
+                        <div class="chart-row">
+                            <span>3 star</span>
+                            <span class="chart-bar"></span>
+                            <span>4%</span>
+                        </div>
+
+                        <div class="chart-row">
+                            <span>2 star</span>
+                            <span class="chart-bar"></span>
+                            <span>1%</span>
+                        </div>
+
+                        <div class="chart-row">
+                            <span>1 star</span>
+                            <span class="chart-bar"></span>
+                            <span>0%</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="surface stack">
+                    <h2>Latest review</h2>
+
+                    <p class="rating">★ 5.0 · Demo Customer</p>
+
+                    <p>
+                        Butter Chicken was packed carefully and tasted excellent.
+                    </p>
+
+                    <p class="caption">
+                        Today · Response pending
+                    </p>
+
+                    <a class="btn btn--outline" href="reviews.html">
+                        Reply to review
+                    </a>
+                </article>
+            </section>
+        </div>
+    </main>
+</div>
+
+<script defer="True" src="../../js/app.js"></script>
+</body>
+</html>
