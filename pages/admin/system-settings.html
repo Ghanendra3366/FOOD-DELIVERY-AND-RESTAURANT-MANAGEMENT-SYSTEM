@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="THE MARKETS root administrator dashboard" name="description"/>
+    <title>System settings | THE MARKETS</title>
+    <link href="../../css/main.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="dashboard-sidebar">
+            <a class="brand" href="../../index.html">
+                <span class="brand-mark">TM</span>
+                <span>THE MARKETS</span>
+            </a>
+        <nav aria-label="Root administrator navigation" class="dashboard-sidebar__nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="users.html">Users</a>
+            <a href="customers.html">Customers</a>
+            <a href="employees.html">Employees</a>
+            <a href="delivery-partners.html">Delivery Partners</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="categories.html">Categories</a>
+            <a href="food-items.html">Food Items</a>
+            <a href="orders.html">Orders</a>
+            <a href="payments.html">Payments</a>
+            <a href="deliveries.html">Deliveries</a>
+            <a href="offers.html">Offers</a>
+            <a href="coupons.html">Coupons</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="reports.html">Reports</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="support.html">Support</a>
+            <a aria-current="page" href="system-settings.html">System Settings</a>
+            <a href="audit-logs.html">Audit Logs</a>
+            <a href="profile.html">Profile</a>
+            <a class="js-logout" href="../public/login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <main class="dashboard-main">
+        <header class="dashboard-topbar">
+            <div>
+                <p class="eyebrow">Root administration</p>
+                <h1>System settings</h1>
+            </div>
+
+            <div class="cluster">
+                <span class="badge badge--success">● System operational</span>
+                <a aria-label="Notifications" class="icon-button" href="notifications.html">🔔</a>
+                <a class="btn btn--outline btn--sm" href="profile.html">Admin</a>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <form action="system-settings.html" class="grid grid--2">
+                <section class="surface form-grid">
+                    <h2>Platform controls</h2>
+
+                    <label class="form-check">
+                        <input checked="" type="checkbox"/>
+                        Allow restaurant registrations
+                    </label>
+
+                    <label class="form-check">
+                        <input checked="" type="checkbox"/>
+                        Allow customer orders
+                    </label>
+
+                    <label class="form-check">
+                        <input checked="" type="checkbox"/>
+                        Enable delivery assignments
+                    </label>
+
+                    <button class="btn btn--primary" type="submit">
+                        Save platform settings
+                    </button>
+                </section>
+
+                <section class="surface form-grid">
+                    <h2>Notification policy</h2>
+
+                    <label class="form-check">
+                        <input checked="" type="checkbox"/>
+                        Operational alerts
+                    </label>
+
+                    <label class="form-check">
+                        <input checked="" type="checkbox"/>
+                        Payment alerts
+                    </label>
+
+                    <label class="form-check">
+                        <input checked="" type="checkbox"/>
+                        Security alerts
+                    </label>
+
+                    <button class="btn btn--primary" type="submit">
+                        Save notification policy
+                    </button>
+                </section>
+            </form>
+        </div>
+    </main>
+</div>
+
+<script defer="True" src="../../js/app.js"></script>
+</body>
+</html>

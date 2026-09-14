@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+        name="description"
+        content="THE MARKETS root administrator dashboard"
+    />
+    <title>Order TM10001 | THE MARKETS</title>
+    <link href="../../css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="dashboard-layout">
+
+    <aside class="dashboard-sidebar">
+
+        <a class="brand" href="../../index.html">
+            <span class="brand-mark">TM</span>
+            <span>THE MARKETS</span>
+        </a>
+
+        <nav
+            class="dashboard-sidebar__nav"
+            aria-label="Root administrator navigation"
+        >
+            <a href="dashboard.html">Dashboard</a>
+            <a href="users.html">Users</a>
+            <a href="customers.html">Customers</a>
+            <a href="employees.html">Employees</a>
+            <a href="delivery-partners.html">Delivery Partners</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="categories.html">Categories</a>
+            <a href="food-items.html">Food Items</a>
+
+            <a href="orders.html" aria-current="page">
+                Orders
+            </a>
+
+            <a href="payments.html">Payments</a>
+            <a href="deliveries.html">Deliveries</a>
+            <a href="offers.html">Offers</a>
+            <a href="coupons.html">Coupons</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="reports.html">Reports</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="support.html">Support</a>
+            <a href="system-settings.html">System Settings</a>
+            <a href="audit-logs.html">Audit Logs</a>
+            <a href="profile.html">Profile</a>
+
+            <a
+                class="js-logout"
+                href="../public/login.html"
+            >
+                Logout
+            </a>
+        </nav>
+
+    </aside>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-topbar">
+
+            <div>
+                <p class="eyebrow">
+                    Root administration
+                </p>
+
+                <h1>
+                    Order TM10001
+                </h1>
+            </div>
+
+            <div class="cluster">
+
+                <span class="badge badge--success">
+                    ● System operational
+                </span>
+
+                <a
+                    aria-label="Notifications"
+                    class="icon-button"
+                    href="notifications.html"
+                >
+                    🔔
+                </a>
+
+                <a
+                    class="btn btn--outline btn--sm"
+                    href="profile.html"
+                >
+                    Admin
+                </a>
+
+            </div>
+
+        </header>
+
+        <div class="dashboard-content">
+
+            <section class="two-column">
+
+                <div class="stack">
+
+                    <article class="surface stack">
+
+                        <h2>
+                            Order #TM10001
+                        </h2>
+
+                        <p>
+                            Demo Customer · The Spice Route ·
+                            2 items · 12 Sep 2026
+                        </p>
+
+                        <span class="status-badge status-out-for-delivery">
+                            Out for delivery
+                        </span>
+
+                    </article>
+
+                    <article class="surface stack">
+
+                        <h2>
+                            Order items
+                        </h2>
+
+                        <div class="split">
+                            <span>
+                                Butter Chicken × 1
+                            </span>
+
+                            <strong>
+                                ₹349
+                            </strong>
+                        </div>
+
+                        <div class="split">
+                            <span>
+                                Veg Biryani × 1
+                            </span>
+
+                            <strong>
+                                ₹279
+                            </strong>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <aside class="price-summary">
+
+                    <h2>
+                        Payment
+                    </h2>
+
+                    <div class="split">
+                        <span>
+                            Method
+                        </span>
+
+                        <span>
+                            UPI
+                        </span>
+                    </div>
+
+                    <div class="split">
+                        <span>
+                            Status
+                        </span>
+
+                        <span class="text-success">
+                            Paid
+                        </span>
+                    </div>
+
+                    <div class="price-summary__total">
+                        <span>
+                            Total
+                        </span>
+
+                        <span>
+                            ₹639
+                        </span>
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script
+    defer="True"
+    src="../../js/app.js"
+></script>
+</body>
+
+</html>

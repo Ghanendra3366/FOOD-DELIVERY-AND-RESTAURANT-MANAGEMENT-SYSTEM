@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="THE MARKETS root administrator dashboard" name="description"/>
-    <title>Reviews | THE MARKETS</title>
+    <title>Restaurants | THE MARKETS</title>
     <link href="../../css/main.css" rel="stylesheet"/>
 </head>
 <body>
@@ -21,7 +21,7 @@
             <a href="customers.html">Customers</a>
             <a href="employees.html">Employees</a>
             <a href="delivery-partners.html">Delivery Partners</a>
-            <a href="restaurants.html">Restaurants</a>
+            <a aria-current="page" href="restaurants.html">Restaurants</a>
             <a href="categories.html">Categories</a>
             <a href="food-items.html">Food Items</a>
             <a href="orders.html">Orders</a>
@@ -29,7 +29,7 @@
             <a href="deliveries.html">Deliveries</a>
             <a href="offers.html">Offers</a>
             <a href="coupons.html">Coupons</a>
-            <a aria-current="page" href="reviews.html">Reviews</a>
+            <a href="reviews.html">Reviews</a>
             <a href="reports.html">Reports</a>
             <a href="analytics.html">Analytics</a>
             <a href="notifications.html">Notifications</a>
@@ -45,7 +45,7 @@
         <header class="dashboard-topbar">
             <div>
                 <p class="eyebrow">Root administration</p>
-                <h1>Reviews</h1>
+                <h1>Restaurants</h1>
             </div>
 
             <div class="cluster">
@@ -58,22 +58,22 @@
         <div class="dashboard-content">
             <section class="split">
                 <p class="lead">
-                    Moderate customer feedback and flagged content.
+                    Approve and manage platform restaurant partners.
                 </p>
-                <a class="btn btn--primary" href="reviews.html">
+                <a class="btn btn--primary" href="restaurants.html">
                     Add / manage
                 </a>
             </section>
 
-            <form action="reviews.html" class="filter-bar">
+            <form action="restaurants.html" class="filter-bar">
                 <label class="sr-only" for="admin-search">
-                    Search Reviews
+                    Search Restaurants
                 </label>
 
                 <input
                     class="form-control"
                     id="admin-search"
-                    placeholder="Search reviews"
+                    placeholder="Search restaurants"
                     type="search"
                 />
 
@@ -92,9 +92,9 @@
                 <table class="data-table">
                     <thead>
                         <tr>
-                            <th scope="col">Review</th>
                             <th scope="col">Restaurant</th>
-                            <th scope="col">Rating</th>
+                            <th scope="col">Cuisine</th>
+                            <th scope="col">Orders</th>
                             <th scope="col">Status</th>
                             <th scope="col">Action</th>
                         </tr>
@@ -103,17 +103,20 @@
                     <tbody>
                         <tr>
                             <td>
-                                <strong>Great packaging</strong>
+                                <strong>The Spice Route</strong>
                             </td>
-                            <td>The Spice Route</td>
-                            <td>5.0</td>
+                            <td>North Indian</td>
+                            <td>684</td>
                             <td>
                                 <span class="status-badge status-confirmed">
-                                    Published
+                                    Active
                                 </span>
                             </td>
                             <td>
-                                <a class="btn btn--outline btn--sm" href="dashboard.html">
+                                <a
+                                    class="btn btn--outline btn--sm"
+                                    href="restaurant-details.html"
+                                >
                                     View
                                 </a>
                             </td>
@@ -121,17 +124,20 @@
 
                         <tr>
                             <td>
-                                <strong>Delivery concern</strong>
+                                <strong>Green Bowl</strong>
                             </td>
-                            <td>Pizza Corner</td>
-                            <td>2.0</td>
+                            <td>Healthy</td>
+                            <td>432</td>
                             <td>
                                 <span class="status-badge status-pending">
-                                    Flagged
+                                    Pending
                                 </span>
                             </td>
                             <td>
-                                <a class="btn btn--outline btn--sm" href="dashboard.html">
+                                <a
+                                    class="btn btn--outline btn--sm"
+                                    href="restaurant-details.html"
+                                >
                                     View
                                 </a>
                             </td>

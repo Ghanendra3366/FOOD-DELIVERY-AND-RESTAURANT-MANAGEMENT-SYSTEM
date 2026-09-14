@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+        name="description"
+        content="THE MARKETS root administrator dashboard"
+    />
+    <title>Offers | THE MARKETS</title>
+    <link href="../../css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="dashboard-layout">
+
+    <aside class="dashboard-sidebar">
+
+        <a class="brand" href="../../index.html">
+            <span class="brand-mark">TM</span>
+            <span>THE MARKETS</span>
+        </a>
+
+        <nav
+            class="dashboard-sidebar__nav"
+            aria-label="Root administrator navigation"
+        >
+            <a href="dashboard.html">Dashboard</a>
+            <a href="users.html">Users</a>
+            <a href="customers.html">Customers</a>
+            <a href="employees.html">Employees</a>
+            <a href="delivery-partners.html">Delivery Partners</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="categories.html">Categories</a>
+            <a href="food-items.html">Food Items</a>
+            <a href="orders.html">Orders</a>
+            <a href="payments.html">Payments</a>
+            <a href="deliveries.html">Deliveries</a>
+
+            <a href="offers.html" aria-current="page">
+                Offers
+            </a>
+
+            <a href="coupons.html">Coupons</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="reports.html">Reports</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="support.html">Support</a>
+            <a href="system-settings.html">System Settings</a>
+            <a href="audit-logs.html">Audit Logs</a>
+            <a href="profile.html">Profile</a>
+
+            <a
+                class="js-logout"
+                href="../public/login.html"
+            >
+                Logout
+            </a>
+        </nav>
+
+    </aside>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-topbar">
+
+            <div>
+                <p class="eyebrow">
+                    Root administration
+                </p>
+
+                <h1>
+                    Offers
+                </h1>
+            </div>
+
+            <div class="cluster">
+
+                <span class="badge badge--success">
+                    ● System operational
+                </span>
+
+                <a
+                    aria-label="Notifications"
+                    class="icon-button"
+                    href="notifications.html"
+                >
+                    🔔
+                </a>
+
+                <a
+                    class="btn btn--outline btn--sm"
+                    href="profile.html"
+                >
+                    Admin
+                </a>
+
+            </div>
+
+        </header>
+
+        <div class="dashboard-content">
+
+            <section class="split">
+
+                <p class="lead">
+                    Manage platform and restaurant promotion campaigns.
+                </p>
+
+                <a
+                    class="btn btn--primary"
+                    href="offers.html"
+                >
+                    Add / manage
+                </a>
+
+            </section>
+
+            <form
+                action="offers.html"
+                class="filter-bar"
+            >
+
+                <label
+                    class="sr-only"
+                    for="admin-search"
+                >
+                    Search Offers
+                </label>
+
+                <input
+                    class="form-control"
+                    id="admin-search"
+                    placeholder="Search offers"
+                    type="search"
+                />
+
+                <select
+                    aria-label="Status filter"
+                    class="form-control"
+                >
+                    <option>All statuses</option>
+                    <option>Active</option>
+                    <option>Pending</option>
+                </select>
+
+                <button
+                    class="btn btn--outline"
+                    type="submit"
+                >
+                    Apply filters
+                </button>
+
+            </form>
+
+            <div class="table-wrap">
+
+                <table class="data-table">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Offer</th>
+                            <th scope="col">Scope</th>
+                            <th scope="col">Discount</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <strong>
+                                    WELCOME125
+                                </strong>
+                            </td>
+
+                            <td>
+                                Platform
+                            </td>
+
+                            <td>
+                                ₹125
+                            </td>
+
+                            <td>
+                                <span class="status-badge status-confirmed">
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+                                <a
+                                    class="btn btn--outline btn--sm"
+                                    href="dashboard.html"
+                                >
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>
+                                    SPICE20
+                                </strong>
+                            </td>
+
+                            <td>
+                                The Spice Route
+                            </td>
+
+                            <td>
+                                20%
+                            </td>
+
+                            <td>
+                                <span class="status-badge status-pending">
+                                    Scheduled
+                                </span>
+                            </td>
+
+                            <td>
+                                <a
+                                    class="btn btn--outline btn--sm"
+                                    href="dashboard.html"
+                                >
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script
+    defer="True"
+    src="../../js/app.js"
+></script>
+</body>
+
+</html>

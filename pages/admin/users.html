@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="THE MARKETS root administrator dashboard" name="description"/>
-    <title>Reviews | THE MARKETS</title>
+    <title>Users | THE MARKETS</title>
     <link href="../../css/main.css" rel="stylesheet"/>
 </head>
 <body>
@@ -17,7 +17,7 @@
             </a>
         <nav aria-label="Root administrator navigation" class="dashboard-sidebar__nav">
             <a href="dashboard.html">Dashboard</a>
-            <a href="users.html">Users</a>
+            <a aria-current="page" href="users.html">Users</a>
             <a href="customers.html">Customers</a>
             <a href="employees.html">Employees</a>
             <a href="delivery-partners.html">Delivery Partners</a>
@@ -29,7 +29,7 @@
             <a href="deliveries.html">Deliveries</a>
             <a href="offers.html">Offers</a>
             <a href="coupons.html">Coupons</a>
-            <a aria-current="page" href="reviews.html">Reviews</a>
+            <a href="reviews.html">Reviews</a>
             <a href="reports.html">Reports</a>
             <a href="analytics.html">Analytics</a>
             <a href="notifications.html">Notifications</a>
@@ -45,7 +45,7 @@
         <header class="dashboard-topbar">
             <div>
                 <p class="eyebrow">Root administration</p>
-                <h1>Reviews</h1>
+                <h1>Users</h1>
             </div>
 
             <div class="cluster">
@@ -57,23 +57,16 @@
 
         <div class="dashboard-content">
             <section class="split">
-                <p class="lead">
-                    Moderate customer feedback and flagged content.
-                </p>
-                <a class="btn btn--primary" href="reviews.html">
-                    Add / manage
-                </a>
+                <p class="lead">Manage all platform accounts and role assignments.</p>
+                <a class="btn btn--primary" href="users.html">Add / manage</a>
             </section>
 
-            <form action="reviews.html" class="filter-bar">
-                <label class="sr-only" for="admin-search">
-                    Search Reviews
-                </label>
-
+            <form action="users.html" class="filter-bar">
+                <label class="sr-only" for="admin-search">Search Users</label>
                 <input
                     class="form-control"
                     id="admin-search"
-                    placeholder="Search reviews"
+                    placeholder="Search users"
                     type="search"
                 />
 
@@ -92,9 +85,9 @@
                 <table class="data-table">
                     <thead>
                         <tr>
-                            <th scope="col">Review</th>
-                            <th scope="col">Restaurant</th>
-                            <th scope="col">Rating</th>
+                            <th scope="col">User</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Role</th>
                             <th scope="col">Status</th>
                             <th scope="col">Action</th>
                         </tr>
@@ -103,13 +96,13 @@
                     <tbody>
                         <tr>
                             <td>
-                                <strong>Great packaging</strong>
+                                <strong>Demo Customer</strong>
                             </td>
-                            <td>The Spice Route</td>
-                            <td>5.0</td>
+                            <td>customer@themarkets.demo</td>
+                            <td>Customer</td>
                             <td>
                                 <span class="status-badge status-confirmed">
-                                    Published
+                                    Active
                                 </span>
                             </td>
                             <td>
@@ -121,13 +114,31 @@
 
                         <tr>
                             <td>
-                                <strong>Delivery concern</strong>
+                                <strong>Demo Manager</strong>
                             </td>
-                            <td>Pizza Corner</td>
-                            <td>2.0</td>
+                            <td>manager@themarkets.demo</td>
+                            <td>Employee</td>
+                            <td>
+                                <span class="status-badge status-confirmed">
+                                    Active
+                                </span>
+                            </td>
+                            <td>
+                                <a class="btn btn--outline btn--sm" href="dashboard.html">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Demo Partner</strong>
+                            </td>
+                            <td>partner@themarkets.demo</td>
+                            <td>Delivery Partner</td>
                             <td>
                                 <span class="status-badge status-pending">
-                                    Flagged
+                                    Pending
                                 </span>
                             </td>
                             <td>
