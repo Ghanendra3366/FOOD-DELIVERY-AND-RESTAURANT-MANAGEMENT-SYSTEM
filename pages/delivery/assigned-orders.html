@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="THE MARKETS delivery partner dashboard" name="description"/>
+  <title>
+   Assigned orders | THE MARKETS
+  </title>
+  <link href="../../css/main.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="dashboard-layout">
+   <aside class="dashboard-sidebar">
+    <a class="brand" href="../../index.html">
+     <span class="brand-mark">
+      TM
+     </span>
+     <span>
+      THE MARKETS
+     </span>
+    </a>
+    <nav aria-label="Delivery navigation" class="dashboard-sidebar__nav">
+     <a href="dashboard.html">
+      Dashboard
+     </a>
+     <a href="available-deliveries.html">
+      Available Deliveries
+     </a>
+     <a aria-current="page" href="assigned-orders.html">
+      Assigned Orders
+     </a>
+     <a href="pickup.html">
+      Pickup
+     </a>
+     <a href="delivery-progress.html">
+      Delivery Progress
+     </a>
+     <a href="completed.html">
+      Completed
+     </a>
+     <a href="failed.html">
+      Failed
+     </a>
+     <a href="earnings.html">
+      Earnings
+     </a>
+     <a href="history.html">
+      History
+     </a>
+     <a href="notifications.html">
+      Notifications
+     </a>
+     <a href="profile.html">
+      Profile
+     </a>
+     <a href="settings.html">
+      Settings
+     </a>
+     <a href="support.html">
+      Support
+     </a>
+     <a class="js-logout" href="../public/login.html">
+      Logout
+     </a>
+    </nav>
+   </aside>
+   <main class="dashboard-main">
+    <header class="dashboard-topbar">
+     <div>
+      <p class="eyebrow">
+       Delivery partner workspace
+      </p>
+      <h1>
+       Assigned orders
+      </h1>
+     </div>
+     <div class="cluster">
+      <span class="badge badge--success">
+       ● Online
+      </span>
+      <a aria-label="Notifications" class="icon-button" href="notifications.html">
+       🔔
+      </a>
+      <a class="btn btn--outline btn--sm" href="profile.html">
+       Rider
+      </a>
+     </div>
+    </header>
+    <div class="dashboard-content">
+     <section class="stack">
+      <p class="lead">
+       Your current and upcoming delivery assignments.
+      </p>
+      <div class="table-wrap">
+       <table class="data-table">
+        <thead>
+         <tr>
+          <th scope="col">
+           Order
+          </th>
+          <th scope="col">
+           Restaurant
+          </th>
+          <th scope="col">
+           Customer area
+          </th>
+          <th scope="col">
+           Distance
+          </th>
+          <th scope="col">
+           Amount
+          </th>
+          <th scope="col">
+           Status
+          </th>
+          <th scope="col">
+           Action
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           <strong>
+            TM10001
+           </strong>
+          </td>
+          <td>
+           The Spice Route
+          </td>
+          <td>
+           City Park · 2.4 km
+          </td>
+          <td>
+           ₹58
+          </td>
+          <td>
+           Assigned
+          </td>
+          <td>
+           <span class="status-badge status-confirmed">
+            Assigned
+           </span>
+          </td>
+          <td>
+           <a class="btn btn--outline btn--sm" href="order-details.html">
+            View
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <strong>
+            TM10002
+           </strong>
+          </td>
+          <td>
+           Pizza Corner
+          </td>
+          <td>
+           Market Road · 3.1 km
+          </td>
+          <td>
+           ₹72
+          </td>
+          <td>
+           Completed
+          </td>
+          <td>
+           <span class="status-badge status-delivered">
+            Completed
+           </span>
+          </td>
+          <td>
+           <a class="btn btn--outline btn--sm" href="order-details.html">
+            View
+           </a>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </section>
+    </div>
+   </main>
+  </div>
+  <script defer="True" src="../../js/app.js">
+  </script>
+ </body>
+</html>
+
